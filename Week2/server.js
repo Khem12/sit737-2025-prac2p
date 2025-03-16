@@ -27,6 +27,8 @@ if(process.env.NODE_ENV !== 'production'){
     }));
 }
 
+app.use(express.static(__dirname+'/public'));
+
 // --for addition--
 const add = (n1, n2) => {
     return n1 + n2;
@@ -36,23 +38,22 @@ app.get("/add", (req, res) => {
     try {
         const n1 = parseFloat(req.query.n1); 
         const n2 = parseFloat(req.query.n2);
+
         if (isNaN(n1)) {
             logger.error("n1 is incorrectly defined");
             throw new Error("n1 incorrectly defined");
-        } if (isNaN(n2)) {
+        } 
+        if (isNaN(n2)) {
             logger.error("n2 is incorrectly defined");
             throw new Error("n2 incorrectly defined");
         }
-        if (n1 === NaN || n2 === NaN) {
-            console.log()
-            throw new Error("Parsing Error");
-        }
-        logger.info('Parameters '+n1+' and '+n2+' received for addition');
+
+        logger.info('Parameters ' + n1 + ' and ' + n2 + ' received for addition');
         const result = add(n1, n2);
         res.status(200).json({ statuscode: 200, data: result });
     } catch (error) {
-        console.log(error)
-        res.status(500).json({ statuscode: 500, msg: error.toString() })
+        logger.error(error.toString());
+        res.status(500).json({ statuscode: 500, msg: error.toString() });
     }
 });
 
