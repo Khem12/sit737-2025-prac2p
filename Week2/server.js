@@ -38,7 +38,7 @@ app.get("/add", (req, res) => {
     try {
         const n1 = parseFloat(req.query.n1); 
         const n2 = parseFloat(req.query.n2);
-
+        
         if (isNaN(n1)) {
             logger.error("n1 is incorrectly defined");
             throw new Error("n1 incorrectly defined");
@@ -47,7 +47,7 @@ app.get("/add", (req, res) => {
             logger.error("n2 is incorrectly defined");
             throw new Error("n2 incorrectly defined");
         }
-
+        
         logger.info('Parameters ' + n1 + ' and ' + n2 + ' received for addition');
         const result = add(n1, n2);
         res.status(200).json({ statuscode: 200, data: result });

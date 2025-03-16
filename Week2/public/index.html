@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
-    <!-- linking CSS file -->
-    <link rel="stylesheet" href="../css/style.css"> 
+    <!-- --Inter CSS--  -->
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -17,13 +16,13 @@
             height: 100vh;
             margin: 0;
         }
-
+        
         h1 {
             font-size: 2em;
             margin-bottom: 20px;
             color: #333;
         }
-
+        
         .calculator {
             background-color: #92c7f0;
             padding: 20px;
@@ -31,7 +30,7 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             width: 300px;
         }
-
+        
         .calculator input {
             width: 100%;
             height: 50px;
@@ -43,7 +42,7 @@
             box-sizing: border-box;
             margin-bottom: 20px;
         }
-
+        
         .calculator button {
             width: 60px;
             height: 60px;
@@ -55,38 +54,38 @@
             cursor: pointer;
             transition: background-color 0.3s;
         }
-
+        
         .calculator button:hover {
             background-color: #e0e0e0;
         }
-
+        
         .calculator button:active {
             background-color: #d0d0d0;
         }
-
+        
         .calculator button.operator {
             background-color: #ff9500;
             color: white;
         }
-
+        
         .calculator button.operator:hover {
             background-color: #e68900;
         }
-
+        
         .calculator button.equal {
             background-color: #4caf50;
             color: white;
         }
-
+        
         .calculator button.equal:hover {
             background-color: #45a049;
         }
-
+        
         .calculator button.clear {
             background-color: #f44336;
             color: white;
         }
-
+        
         .calculator button.clear:hover {
             background-color: #e53935;
         }
@@ -95,7 +94,7 @@
 <body>
     <!-- Heading -->
     <h1>Welcome to the DemoCalculator</h1>
-
+    
     <!-- Calculator Section -->
     <div class="calculator">
         <input type="text" id="display" disabled>
@@ -122,34 +121,35 @@
             <button class="clear" onclick="clearDisplay()">C</button>
         </div>
     </div>
-
+    <!-- --Script section-- -->
     <script>
         let operator = '';
         let firstNumber = '';
         
-        // Append clicked number to the display
+        // Function to Append clicked number to the display
         function appendToDisplay(value) {
             document.getElementById('display').value += value;
         }
         
-        // Clear the display
+        // Function to Clear the display
         function clearDisplay() {
             document.getElementById('display').value = '';
             firstNumber = '';
             operator = '';
         }
         
-        // Store operator and first number
+        //Function Store operator and first number
         function setOperator(op) {
             firstNumber = document.getElementById('display').value;
             operator = op;
             document.getElementById('display').value = '';  // Clear display for the second number
         }
         
-        // Calculate result by calling backend API
+        // Using async function to Calculate result by calling backend API
         async function calculateResult() {
             const secondNumber = document.getElementById('display').value;
             
+            // --Using if else and try catch--
             if (operator && firstNumber && secondNumber) {
                 try {
                     let response;
@@ -165,18 +165,18 @@
                     } else if (operator === '/') {
                         response = await fetch(`/divison?n1=${num1}&n2=${num2}`);
                     }
-
+                    
                     if (!response.ok) {
                         throw new Error('Failed to fetch data from server');
                     }
-
+                    
                     const data = await response.json();
                     if (data.statuscode === 200) {
                         document.getElementById('display').value = data.data;
                     } else {
                         document.getElementById('display').value = 'Error';
                     }
-
+                    
                 } catch (error) {
                     console.log(error);
                     document.getElementById('display').value = 'Error';
@@ -186,6 +186,6 @@
             }
         }
     </script>
-
+    
 </body>
 </html>
