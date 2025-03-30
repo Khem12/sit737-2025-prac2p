@@ -1,0 +1,89 @@
+{"level":"info","message":"Server is listening on port 3000","service":"calculator-microservice"}
+{"level":"info","message":"Request: GET /add from ::1","service":"calculator-microservice"}
+{"level":"error","message":"Please enter valid numbers.","service":"calculator-microservice"}
+{"level":"info","message":"Request: GET /add from ::1","service":"calculator-microservice"}
+{"level":"error","message":"Please enter valid numbers.","service":"calculator-microservice"}
+{"level":"info","message":"Request: GET /favicon.ico from ::1","service":"calculator-microservice"}
+{"level":"info","message":"Request: GET /add?n1=5&n2=7 from ::1","service":"calculator-microservice"}
+{"level":"error","message":"Please enter valid numbers.","service":"calculator-microservice"}
+{"level":"info","message":"Request: GET /add?n1=5&n2 from ::1","service":"calculator-microservice"}
+{"level":"error","message":"Please enter valid numbers.","service":"calculator-microservice"}
+{"level":"info","message":"Request: GET /add?n1=5&n2=3 from ::1","service":"calculator-microservice"}
+{"level":"error","message":"Please enter valid numbers.","service":"calculator-microservice"}
+{"level":"info","message":"Request: GET /add?n1=5&n2=3 from ::1","service":"calculator-microservice"}
+{"level":"error","message":"Please enter valid numbers.","service":"calculator-microservice"}
+{"level":"info","message":"Server is listening on port 3000","service":"calculator-microservice"}
+{"level":"info","message":"Request: GET /add from ::1","service":"calculator-microservice"}
+{"level":"error","message":"Please enter valid numbers.","service":"calculator-microservice"}
+{"level":"info","message":"Arithmetic API running at http://localhost:3000","service":"calculator-microservice"}
+{"level":"info","message":"Request: GET / from ::1","service":"calculator-microservice"}
+{"level":"info","message":"Request: GET /add?n1=2&n2=3 from ::1","service":"calculator-microservice"}
+{"level":"error","message":"Please enter valid numbers.","service":"calculator-microservice"}
+{"level":"info","message":"Request: GET /add?num1=2&num2=3 from ::1","service":"calculator-microservice"}
+{"level":"info","message":"New addition operation created: 2 + 3 = 5","service":"calculator-microservice"}
+{"level":"info","message":"Request: GET /sub?num1=2&num2=3 from ::1","service":"calculator-microservice"}
+{"level":"info","message":"Request: GET /sub?num1=2&num2=3 from ::1","service":"calculator-microservice"}
+{"level":"info","message":"Request: GET /sub?num1=2&num2=3 from ::1","service":"calculator-microservice"}
+{"level":"info","message":"Request: GET /sub?num1=5&num2=3 from ::1","service":"calculator-microservice"}
+{"level":"info","message":"Request: GET /sub?num1=5&num2=3 from ::1","service":"calculator-microservice"}
+{"level":"info","message":"Arithmetic API running at http://localhost:3000","service":"calculator-microservice"}
+{"level":"info","message":"Request: GET /sub?num1=5&num2=3 from ::1","service":"calculator-microservice"}
+{"level":"info","message":"New subtraction operation created: 5 - 3 = 2","service":"calculator-microservice"}
+{"level":"info","message":"Request: GET /multi?num1=5&num2=3 from ::1","service":"calculator-microservice"}
+{"level":"info","message":"New multiplication operation created: 5 * 3 = 15","service":"calculator-microservice"}
+{"level":"info","message":"Request: GET /divi?num1=5&num2=3 from ::1","service":"calculator-microservice"}
+{"level":"info","message":"New division operation created: 5 / 3 = 1.6666666666666667","service":"calculator-microservice"}
+{"level":"info","message":"Request: GET /divi?num1=5&num2=0 from ::1","service":"calculator-microservice"}
+{"level":"error","message":"Cannot be divide by zero.","service":"calculator-microservice"}
+{"level":"info","message":"Arithmetic API running at http://localhost:3000","service":"calculator-microservice"}
+{"level":"info","message":"Request: GET /add from ::1","service":"calculator-microservice"}
+{"level":"error","message":"Please enter valid numbers.","service":"calculator-microservice"}
+{"level":"info","message":"Request: GET /add from ::1","service":"calculator-microservice"}
+{"level":"error","message":"Please enter valid numbers.","service":"calculator-microservice"}
+{"level":"info","message":"Request: GET /add from ::1","service":"calculator-microservice"}
+{"level":"error","message":"Please enter valid numbers.","service":"calculator-microservice"}
+{"level":"info","message":"Request: GET /add from ::1","service":"calculator-microservice"}
+{"level":"error","message":"Please enter valid numbers.","service":"calculator-microservice"}
+{"level":"info","message":"Request: POST /add from ::1","service":"calculator-microservice"}
+{"level":"info","message":"Arithmetic API running at http://localhost:3000","service":"calculator-microservice"}
+{"level":"info","message":"Request: POST /add from ::1","service":"calculator-microservice"}
+{"level":"error","message":"Please enter valid numbers.","service":"calculator-microservice"}
+{"level":"info","message":"Request: POST /add from ::1","service":"calculator-microservice"}
+{"level":"error","message":"Please enter valid numbers.","service":"calculator-microservice"}
+{"level":"info","message":"Request: POST /add from ::1","service":"calculator-microservice"}
+{"level":"error","message":"Please enter valid numbers.","service":"calculator-microservice"}
+{"level":"info","message":"Request: POST /add from ::1","service":"calculator-microservice"}
+{"level":"error","message":"Please enter valid numbers.","service":"calculator-microservice"}
+{"level":"info","message":"Request: POST /add from ::1","service":"calculator-microservice"}
+{"level":"error","message":"Please enter valid numbers.","service":"calculator-microservice"}
+{"level":"info","message":"Request: POST /add from ::1","service":"calculator-microservice"}
+{"level":"error","message":"Please enter valid numbers.","service":"calculator-microservice"}
+{"level":"info","message":"Request: POST /add from ::1","service":"calculator-microservice"}
+{"level":"error","message":"Please enter valid numbers.","service":"calculator-microservice"}
+{"level":"info","message":"Request: POST /add from ::1","service":"calculator-microservice"}
+{"level":"error","message":"Please enter valid numbers.","service":"calculator-microservice"}
+{"level":"info","message":"Request: POST /add from ::1","service":"calculator-microservice"}
+{"level":"error","message":"Please enter valid numbers.","service":"calculator-microservice"}
+{"level":"info","message":"Request: POST /add?num1=2&num2=4 from ::1","service":"calculator-microservice"}
+{"level":"info","message":"New addition operation created: 2 + 4 = 6","service":"calculator-microservice"}
+{"level":"info","message":"Request: GET /add?num1=2&num2=4 from ::1","service":"calculator-microservice"}
+{"level":"info","message":"Request: GET /?num1=4&num2=5 from ::1","service":"calculator-microservice"}
+{"level":"info","message":"Request: GET /add?num1=5&num2=3 from ::1","service":"calculator-microservice"}
+{"level":"info","message":"Arithmetic API running at http://localhost:3000","service":"calculator-microservice"}
+{"level":"info","message":"Request: GET /add?num1=5&num2=3 from ::1","service":"calculator-microservice"}
+{"level":"info","message":"New addition operation created: 5 + 3 = 8","service":"calculator-microservice"}
+{"level":"info","message":"Request: POST /add from ::1","service":"calculator-microservice"}
+{"level":"info","message":"Request: POST /add from ::1","service":"calculator-microservice"}
+{"level":"info","message":"Request: POST /add from ::1","service":"calculator-microservice"}
+{"level":"info","message":"Arithmetic API running at http://localhost:3000","service":"calculator-microservice"}
+{"level":"info","message":"Request: GET /add?num1=5&num2=3 from ::1","service":"calculator-microservice"}
+{"level":"info","message":"New add operation: 5 add 3 = 8","service":"calculator-microservice"}
+{"level":"info","message":"Calculator running at http://localhost:3000","service":"calculator-microservice"}
+{"level":"info","message":"Request: GET /add?num1=8&num2=3 from ::1","service":"calculator-microservice"}
+{"level":"info","message":"New add operation: 8 add 3 = 11","service":"calculator-microservice"}
+{"level":"info","message":"Request: GET /subtract?num1=8&num2=3 from ::1","service":"calculator-microservice"}
+{"level":"info","message":"New subtract operation: 8 subtract 3 = 5","service":"calculator-microservice"}
+{"level":"info","message":"Request: GET /multiply?num1=8&num2=3 from ::1","service":"calculator-microservice"}
+{"level":"info","message":"New multiply operation: 8 multiply 3 = 24","service":"calculator-microservice"}
+{"level":"info","message":"Request: GET /divide?num1=8&num2=3 from ::1","service":"calculator-microservice"}
+{"level":"info","message":"New divide operation: 8 divide 3 = 2.6666666666666665","service":"calculator-microservice"}
