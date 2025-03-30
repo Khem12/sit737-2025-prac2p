@@ -10,7 +10,7 @@ if (!fs.existsSync('logs')) {
     fs.mkdirSync('logs');
 }
 
-// Middleware to parse JSON requests
+// Parsing JSON requests
 app.use(express.json());
 
 // Configuring Logger
@@ -28,10 +28,10 @@ const logger = winston.createLogger({
 // Function to validate input
 const validateInput = (num1, num2) => {
     if (num1 === undefined || num2 === undefined) {
-        return { valid: false, message: "Missing parameters. Please provide both num1 and num2." };
+        return { valid: false, message: "Please enter both num1 and num2." };
     }
     if (isNaN(num1) || isNaN(num2)) {
-        return { valid: false, message: "Both parameters must be valid numbers." };
+        return { valid: false, message: "Enter valid numbers." };
     }
     return { valid: true };
 };
