@@ -90,3 +90,12 @@
 {"level":"info","message":"Calculator running at http://localhost:3000","service":"calculator-microservice"}
 {"level":"info","message":"Request: GET /divide?num1=8&num2=3 from ::1","service":"calculator-microservice"}
 {"level":"info","message":"New divide operation: 8 divide 3 = 2.6666666666666665","service":"calculator-microservice"}
+{"level":"info","message":"Calculator running at http://localhost:3000","service":"calculator-microservice"}
+{"level":"info","message":"Request: GET /add?num1=8&num2=3 from ::1","service":"calculator-microservice"}
+{"level":"info","message":"New add operation: 8 add 3 = 11","service":"calculator-microservice"}
+{"level":"info","message":"Request: GET /subtract?num1=8&num2=3 from ::1","service":"calculator-microservice"}
+{"level":"info","message":"New subtract operation: 8 subtract 3 = 5","service":"calculator-microservice"}
+{"level":"info","message":"Request: GET /multiply?num1=8&num2=3 from ::1","service":"calculator-microservice"}
+{"level":"info","message":"New multiply operation: 8 multiply 3 = 24","service":"calculator-microservice"}
+{"level":"info","message":"Request: GET /divide?num1=8&num2=3 from ::1","service":"calculator-microservice"}
+{"level":"info","message":"New divide operation: 8 divide 3 = 2.6666666666666665","service":"calculator-microservice"}
